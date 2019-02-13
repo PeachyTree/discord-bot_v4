@@ -1,4 +1,3 @@
-// In this episode we are going to create a rock, papers & scissors command - We require one package
 const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
@@ -32,17 +31,14 @@ let scissors = new Discord.RichEmbed()
 
 if (message.content === '-rps rock') message.channel.send(rock)
 if (message.content === '-rps Rock') message.channel.send(rock)
-if (message.content === '-rps r') message.channel.send(rock)
 
 if (message.content === '-rps paper') message.channel.send(paper)
 if (message.content === '-rps Paper') message.channel.send(paper)
-if (message.content === '-rps p') message.channel.send(paper)
 
 if (message.content === '-rps scissors') message.channel.send(scissors)
 if (message.content === '-rps Scissors') message.channel.send(scissors)
-if (message.content === '-rps s') message.channel.send(scissors)
 
 
 if (message.content === '-rps') message.channel.send('Options: ``Rock``, ``Paper``, ``Scissors``. **Usage: -rps <option>**')
 
-} // Now, we can test it!
+} 
