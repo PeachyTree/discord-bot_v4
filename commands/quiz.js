@@ -1,4 +1,3 @@
-// In this episode we are going to create a quiz command
 const Discord = require('discord.js');
 
 // Command Handler
@@ -37,4 +36,4 @@ exports.run = async (client, message, args) => {
 
   }
 
-} // Now, lets test it!
+} 
