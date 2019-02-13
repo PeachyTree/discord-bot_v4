@@ -1,12 +1,10 @@
-// For the ban command we require 1 package, make sure to install it.
-// Today, we are going to update this command to work again.
 const Discord = require('discord.js');
 
 // Command Handler
 exports.run = async (client, message, args) => {
 
 // Check if user has permission to ban a user
-  message.delete(); // Deletes this message so it can't be seen for anyone else
+  message.delete(); 
   if (!message.member.hasPermission('BAN_MEMBERS')) return message.reply('You do not have permission to use this.');
   if (args[0] == 'help') {
     message.reply('Usage: -ban <user> <reason>');
@@ -37,4 +35,4 @@ exports.run = async (client, message, args) => {
   message.guild.member(bUser).ban(bReason);
   memberlog.send(embed);
 
-} // Now, we can test it!
+} 
