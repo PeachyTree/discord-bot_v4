@@ -1,6 +1,5 @@
 // 🍎🍌🍒🍓🍈
 
-// In this episode we are going to create a slots command!  We require 1 package.
 const Discord = require('discord.js'); // For forming the embed
 
 // Command Handler
@@ -30,4 +29,4 @@ exports.run = (client, message, args) => {
             .setColor(0xF4E842)
         message.channel.send(lEmbed);
     }
-} // Now, let's test it!
+} 
