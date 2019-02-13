@@ -1,4 +1,4 @@
-/* const Discord = require('discord.js'); // For forming & sending embeds
+/* const Discord = require('discord.js'); // 
 const fs = require('fs'); // Already included in the discord.js package
 
 // Command Handler
@@ -26,4 +26,4 @@ exports.run = async (client, message, args) => {
 
   message.channel.send(embed); // Sends the embed
 
-} // Now, lets test it! */
+}  */
