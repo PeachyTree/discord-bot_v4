@@ -1,6 +1,6 @@
 // 🍎🍌🍒🍓🍈
 
-const Discord = require('discord.js'); // For forming the embed
+const Discord = require('discord.js'); 
 
 // Command Handler
 exports.run = (client, message, args) => {
