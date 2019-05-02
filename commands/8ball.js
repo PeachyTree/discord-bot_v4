@@ -1,4 +1,3 @@
-// For the 8ball command we require 1 package
 const Discord = require('discord.js');
 
 exports.run = (client, message, args, tools) => {
