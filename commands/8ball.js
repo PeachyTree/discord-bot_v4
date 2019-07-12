@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const {RichEmbed} = require('discord.js');
 
 exports.run = (client, message, args, tools) => {
 
@@ -29,9 +29,10 @@ exports.run = (client, message, args, tools) => {
                                     'My sources say no',
                                     'Outlook not so good',
                                     'Very doubtful'];
-            const ballEmbed = new Discord.RichEmbed()
+        
+            let embed = new RichEmbed()
                 .setAuthor(question)
                 .setDescription(answer[Math.round(Math.random() * (answer.length - 1))] + '.')
-                .setColor(0x646770);
-            message.channel.send(ballEmbed); 
+                .setColor(0x646770); // Change this to whatever you'd like.
+            message.channel.send({embed}); 
 }
