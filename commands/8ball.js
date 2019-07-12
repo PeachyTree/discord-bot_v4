@@ -5,7 +5,7 @@ exports.run = (client, message, args, tools) => {
         let question = message.content.split(/\s+/g).slice(1).join(" ");
 
         if (!question) {
-            return message.channel.send('You must provide a question! **Usage: -8ball <question>**');
+            return message.channel.send('You must provide a question!\n**Usage: -8ball <question>**');
 
         }
 
