@@ -1,12 +1,14 @@
-// Required Packages - You need to install them (by using npm)
-require('dotenv').config();
+// Copyright (c) 2020 Azura Apple. All rights reserved. MIT license.
+
+// Packages:
+require('dotenv').config(); // Make sure to create a .env file!!
 const Discord = require('discord.js');
 
-// Our client - some people call it bot.
+// Our client - can be changed to bot or anything you'd like.
 const client = new Discord.Client(); 
 
 // Constant Variables
-let prefix = process.env.PREFIX; // Make sure to create a .env file!
+let prefix = process.env.PREFIX; // Don't forget to create a .env file!
 
 // Message event 
 client.on('message', message => {
